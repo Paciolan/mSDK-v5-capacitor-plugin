@@ -1,0 +1,1 @@
+{"version":3,"file":"definitions.js","sourceRoot":"","sources":["../../src/definitions.ts"],"names":[],"mappings":"","sourcesContent":["export interface PaciolanSdkCapacitorPlugin {\n  show(options: {\n    initialConfigs: string;\n  }): Promise<{ initialConfigs: string }>;\n  navAwayFromPac(): Promise<{ result: string }>;\n}\n"]}

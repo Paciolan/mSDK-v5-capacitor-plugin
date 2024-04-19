@@ -1,0 +1,41 @@
+{
+  "api": {
+    "name": "PaciolanSdkCapacitorPlugin",
+    "slug": "paciolansdkcapacitorplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "show",
+        "signature": "(options: { initialConfigs: string; }) => Promise<{ initialConfigs: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ initialConfigs: string; }"
+          }
+        ],
+        "returns": "Promise<{ initialConfigs: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "show"
+      },
+      {
+        "name": "navAwayFromPac",
+        "signature": "() => Promise<{ result: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ result: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "navawayfrompac"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
