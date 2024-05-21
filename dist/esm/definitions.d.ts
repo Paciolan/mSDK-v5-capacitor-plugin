@@ -1,10 +1,13 @@
 export interface PaciolanSdkCapacitorPlugin {
     show(options: {
-        initialConfigs: string;
+        configString: string;
     }): Promise<{
-        initialConfigs: string;
+        configString: string;
     }>;
     navAwayFromPac(): Promise<{
+        result: string;
+    }>;
+    appLaunched(): Promise<{
         result: string;
     }>;
 }

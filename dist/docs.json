@@ -7,15 +7,15 @@
     "methods": [
       {
         "name": "show",
-        "signature": "(options: { initialConfigs: string; }) => Promise<{ initialConfigs: string; }>",
+        "signature": "(options: { configString: string; }) => Promise<{ configString: string; }>",
         "parameters": [
           {
             "name": "options",
             "docs": "",
-            "type": "{ initialConfigs: string; }"
+            "type": "{ configString: string; }"
           }
         ],
-        "returns": "Promise<{ initialConfigs: string; }>",
+        "returns": "Promise<{ configString: string; }>",
         "tags": [],
         "docs": "",
         "complexTypes": [],
@@ -30,6 +30,16 @@
         "docs": "",
         "complexTypes": [],
         "slug": "navawayfrompac"
+      },
+      {
+        "name": "appLaunched",
+        "signature": "() => Promise<{ result: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ result: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "applaunched"
       }
     ],
     "properties": []

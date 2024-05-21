@@ -15,6 +15,7 @@ npx cap sync
 
 * [`show(...)`](#show)
 * [`navAwayFromPac()`](#navawayfrompac)
+* [`appLaunched()`](#applaunched)
 
 </docgen-index>
 
@@ -24,14 +25,14 @@ npx cap sync
 ### show(...)
 
 ```typescript
-show(options: { initialConfigs: string; }) => Promise<{ initialConfigs: string; }>
+show(options: { configString: string; }) => Promise<{ configString: string; }>
 ```
 
-| Param         | Type                                     |
-| ------------- | ---------------------------------------- |
-| **`options`** | <code>{ initialConfigs: string; }</code> |
+| Param         | Type                                   |
+| ------------- | -------------------------------------- |
+| **`options`** | <code>{ configString: string; }</code> |
 
-**Returns:** <code>Promise&lt;{ initialConfigs: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ configString: string; }&gt;</code>
 
 --------------------
 
@@ -40,6 +41,17 @@ show(options: { initialConfigs: string; }) => Promise<{ initialConfigs: string; 
 
 ```typescript
 navAwayFromPac() => Promise<{ result: string; }>
+```
+
+**Returns:** <code>Promise&lt;{ result: string; }&gt;</code>
+
+--------------------
+
+
+### appLaunched()
+
+```typescript
+appLaunched() => Promise<{ result: string; }>
 ```
 
 **Returns:** <code>Promise&lt;{ result: string; }&gt;</code>

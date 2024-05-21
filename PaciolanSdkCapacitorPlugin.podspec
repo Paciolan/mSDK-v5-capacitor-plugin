@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source_files = 'ios/Plugin/**/*.{swift,h,m,c,cc,mm,cpp}'
   s.ios.deployment_target  = '13.4'
   s.dependency 'Capacitor'
-  s.dependency 'PaciolanSDK'
+  s.dependency 'PaciolanSDK', '5.102.0'
   s.swift_version = '5.1'
 end

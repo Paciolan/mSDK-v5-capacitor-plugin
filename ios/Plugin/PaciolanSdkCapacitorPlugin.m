@@ -6,4 +6,5 @@
 CAP_PLUGIN(PaciolanSdk, "PaciolanSdkCapacitor",
            CAP_PLUGIN_METHOD(show, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(navAwayFromPac, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(appLaunched, CAPPluginReturnPromise);
 )

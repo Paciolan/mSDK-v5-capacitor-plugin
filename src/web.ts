@@ -7,11 +7,14 @@ export class PaciolanSdkCapacitorWeb
   implements PaciolanSdkCapacitorPlugin
 {
   async show(options: {
-    initialConfigs: string;
-  }): Promise<{ initialConfigs: string }> {
+    configString: string;
+  }): Promise<{ configString: string }> {
     return options;
   }
   async navAwayFromPac(): Promise<{ result: string }> {
+    return Promise.resolve({ result: "This is a mock response from the web platform." });
+  }
+  async appLaunched(): Promise<{ result: string }> {
     return Promise.resolve({ result: "This is a mock response from the web platform." });
   }
 }

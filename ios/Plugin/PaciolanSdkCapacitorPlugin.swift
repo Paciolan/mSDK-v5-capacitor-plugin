@@ -8,7 +8,7 @@ import Capacitor
 @objc(PaciolanSdk)
 public class PaciolanSdk: CAPPlugin {
     @objc func show(_ call: CAPPluginCall) {
-        let initialConfigs = call.getString("initialConfigs") ?? ""
+        let initialConfigs = call.getString("configString") ?? ""
 
         guard let viewController = self.bridge?.viewController else {
             call.reject("Unable to get the view controller.")
@@ -28,7 +28,7 @@ public class PaciolanSdk: CAPPlugin {
         }
               
         call.resolve([
-            "initialConfigs": initialConfigs,
+            "configString": initialConfigs,
         ])
     }
     @objc func navAwayFromPac(_ call: CAPPluginCall) {
@@ -47,6 +47,14 @@ public class PaciolanSdk: CAPPlugin {
             rejecter: { (code, message, error) in
                 call.reject(message ?? "An error occurred", code, error)
             }
+        )
+    }
+    @objc func appLaunched(_ call: CAPPluginCall) {
+        let paciolanSDKViewController = PaciolanSDKViewController()
+        paciolanSDKViewController.appLaunched(
+            fromPac: nil,
+            resolver: nil,
+            rejecter: nil
         )
     }
 }
