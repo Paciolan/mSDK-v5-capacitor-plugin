@@ -1,6 +1,6 @@
 {
   "name": "paciolan-sdk-capacitor-plugin",
-  "version": "5.105.2602263953175",
+  "version": "5.105.2602273958590",
   "description": "A capacitor plugin for the Paciolan ticketing SDK.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
